@@ -18,6 +18,6 @@ This project contains business logics "Interfaces" and their implementations whi
 
 ### Boilerplate.Infrastructure
 
-This project handles database concerns and other data access operations. The goal is to create an abstraction between the "Domain" layer "Services" layer.
+This project handles database concerns and other data access operations. The goal is to create an abstraction between "Domain" and "Services" layers.
 
 This project contains "Repositories", "Migrations", "DataContext".
