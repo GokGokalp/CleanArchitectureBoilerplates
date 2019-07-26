@@ -4,11 +4,11 @@ This is a basic implementation of "Clean Architecture" for ASP.NET Core. The goa
 
 ### Minimal.API
 
-This project is the UI layer that handles the presentation concerns.
+This project is the layer that handles the presentation (UI,API, etc.) concerns.
 
 ### Minimal.Core
 
-This project is our core and backbone project. The core project is the hearth and center project of the Clean Architecture design. All projects should be depended on the this project.
+This project is our core and backbone project. The core project is the heart and center project of the Clean Architecture design. All projects should be depended on the this project.
 
 This project contains "Models" for domain objects, "Dtos", "Events", "Interfaces" for external dependencies, "Use-Cases" for business rules.
 
