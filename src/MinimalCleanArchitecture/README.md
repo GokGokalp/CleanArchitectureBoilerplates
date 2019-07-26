@@ -1,6 +1,6 @@
 # Minimal.CleanArchitecture
 
-This is a basic implementation of "Clean Architecture" for ASP.NET Core. The goal is to encapsulate the business logic of the application in a clean, loosely coupled and dependency inverted way. MediatR used for in-process messaging and implementing Input and Output Ports.
+This is a basic implementation of "Clean Architecture" for ASP.NET Core. The goal is to encapsulate the business logic of the application in a clean, loosely coupled and dependency inverted way. MediatR used for in-process messaging.
 
 ### Minimal.API
 
