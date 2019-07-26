@@ -8,7 +8,7 @@ This project is the layer that handles the presentation (UI,API, etc.) concerns.
 
 ### Boilerplate.Domain
 
-This project is our core and backbone project. The core project is the heart and center project of the Onion Architecture like Clean Architecture design. All projects should be depended on the this project. Thus core layers always stay pure and if any change applied on the code, this change should be part of an external layer.
+This project is our core and backbone project. The core project is the heart and center project of the Onion Architecture like Clean Architecture design. All projects should be depended on this project. Thus core layers always stay pure and if any change applied on the code, this change should be part of an external layer.
 
 This project contains "Models" for domain objects, "Dtos", "Interfaces" for external dependencies.
 
