@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Minimal.Core.Dtos;
@@ -22,13 +23,28 @@ namespace Minimal.API.Controllers
         {
             BaseResponseDto<bool> createResponse = await _mediator.Send(createMovieRequest);
 
-            if(createResponse.Data)
+            if (createResponse.Data)
             {
                 return Created("...", null);
             }
             else
             {
                 return BadRequest(createResponse.Errors);
+            }
+        }
+
+        [HttpGet("kids")]
+        public async Task<ActionResult<List<MovieDto>>> GetBestMoviesForKidsAsync()
+        {
+            BaseResponseDto<List<MovieDto>> getBestMoviesForKidsReponse = await _mediator.Send(new GetBestMoviesForKidsRequest());
+
+            if (!getBestMoviesForKidsReponse.HasError)
+            {
+                return Ok(getBestMoviesForKidsReponse.Data);
+            }
+            else
+            {
+                return BadRequest(getBestMoviesForKidsReponse.Errors);
             }
         }
     }

@@ -4,6 +4,7 @@ namespace Minimal.Core.Models
     {
         public string Name { get; set; }
         public double Rating { get; set; }
+        public int AgeGroup { get; set; }
         public bool IsDeleted { get; set; }
     }
 }
